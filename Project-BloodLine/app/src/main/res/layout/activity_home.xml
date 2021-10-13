@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:background="#37383b"
+        android:gravity="center|start|center_horizontal"
+        android:text="   User Profile"
+
+        android:textColor="#f4f2f2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="115dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="146dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:srcCompat="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="9dp"
+        android:gravity="center"
+        android:text="Username :"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/showUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="9dp"
+        android:gravity="center"
+        android:text="Full name  :"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/showFullname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="9dp"
+        android:gravity="center"
+        android:text="Contact No :"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/showContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="9dp"
+        android:gravity="center"
+        android:text="Blood Group :"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/showBlood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="9dp"
+        android:gravity="center"
+        android:text="Location :"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/showLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/showLocation"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center|start"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/showBlood" />
+
+    <TextView
+        android:id="@+id/showUsername"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center|start"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/showUserID" />
+
+    <TextView
+        android:id="@+id/showFullname"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center|start"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/showUsername" />
+
+    <TextView
+        android:id="@+id/showContact"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center|start"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/showFullname" />
+
+    <TextView
+        android:id="@+id/showBlood"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center|start"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/showContact" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_bg"
+        android:text="Back to menu"
+        app:layout_constraintEnd_toStartOf="@+id/buttonUpdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="9dp"
+        android:gravity="center"
+        android:text="User ID :"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/showUserID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/showUserID"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="29dp"
+        android:gravity="center|start"
+        android:textColor="#F4F2F2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_bg"
+        android:text="update info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonBack"
+        app:layout_constraintTop_toBottomOf="@+id/showLocation" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

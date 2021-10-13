@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="110dp"
+        android:requiresFadingEdge="horizontal"
+        android:background="@color/purple_200">
+
+        <TextView
+            android:id="@+id/layoutForHelpline"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="start"
+            android:paddingLeft="2dp"
+            android:paddingTop="10dp"
+            android:text="hi"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/layoutForHelpline2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hi"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:gravity="start"
+            android:paddingLeft="2dp"
+            android:paddingTop="40dp"
+            android:textStyle="bold">
+        </TextView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

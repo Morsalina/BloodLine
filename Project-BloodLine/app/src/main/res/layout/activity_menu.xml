@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    android:background="#212121"
+    android:id="@+id/drawer"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/mainmenu" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#212121">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="399dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="1dp"
+            android:background="#837A7A"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_baseline_menu_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blood_req"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="114dp"
+            android:layout_marginBottom="78dp"
+            android:text="My Profile"
+            android:textColor="#bdbdbd"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/historyMenu"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="78dp"
+            android:text="Search Blood"
+            android:textColor="#bdbdbd"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/timeline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.647"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blood_req" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="147dp"
+            android:layout_marginBottom="144dp"
+            android:text="History"
+            android:textColor="#bdbdbd"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/historyMenu" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="276dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="144dp"
+            android:text="Timeline"
+            android:textColor="#bdbdbd"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeline" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="59dp"
+            android:background="@drawable/imagebutton"
+            android:src="@drawable/home"
+            app:layout_constraintBottom_toTopOf="@+id/historyMenu"
+            app:layout_constraintEnd_toStartOf="@+id/blood_req"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/blood_req"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="59dp"
+            android:background="@drawable/imagebutton"
+            android:src="@drawable/blood_req"
+            app:layout_constraintBottom_toTopOf="@+id/timeline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/home"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <ImageButton
+            android:id="@+id/historyMenu"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="223dp"
+            android:background="@drawable/imagebutton"
+            android:src="@drawable/history"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/timeline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home" />
+
+        <ImageButton
+            android:id="@+id/timeline"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="223dp"
+            android:background="@drawable/imagebutton"
+            android:src="@drawable/timeline"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/historyMenu"
+            app:layout_constraintTop_toBottomOf="@+id/blood_req" />
+
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:text="স্বেচ্ছায় করি রক্তদান
+                        হাসবে দেশ, বাঁচবে প্রাণ"
+            android:textColor="#C400FF"
+            android:textSize="19sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:text="** Avoid every kind of transaction with donors. **"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/helpline"
+            android:layout_width="84dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:text="Help Line"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/volunteer"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/volunteer"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:text="Volunteers"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/qaText"
+            app:layout_constraintStart_toEndOf="@+id/helpline"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/qaText"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:text="Q/A"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/volunteer"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

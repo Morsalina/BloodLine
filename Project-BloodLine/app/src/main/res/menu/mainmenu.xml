@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+ <group android:checkableBehavior="single">
+
+     <item
+         android:id="@+id/allPosts"
+         android:icon="@android:drawable/stat_notify_chat"
+         android:title="Timeline" />
+
+     <item
+         android:id="@+id/home"
+         android:title="My Profile"
+         android:icon="@drawable/ic_baseline_home_24"/>
+
+     <item
+         android:id="@+id/bl_req"
+         android:title="Search Blood"
+         android:icon="@drawable/ic_bloodreq"/>
+
+     <item
+         android:id="@+id/historyXD"
+         android:title="History"
+         android:icon="@drawable/ic_history"/>
+
+     <item
+         android:id="@+id/maps"
+         android:title="Map"
+         android:icon="@drawable/ic_baseline_map_24"/>
+
+
+
+
+
+         <item android:title="Profile" >
+             <menu>
+                 <group android:checkableBehavior="single">
+
+                     <item
+                         android:id="@+id/createPost"
+                         android:icon="@drawable/ic_logout"
+                         android:title="Request for blood" />
+
+                     <item
+                         android:id="@+id/myPosts"
+                         android:icon="@drawable/ic_logout"
+                         android:title="See all my requests" />
+
+
+                     <item
+                         android:id="@+id/logout"
+                         android:icon="@drawable/ic_logout"
+                         android:title="Logout" />
+                 </group>
+             </menu>
+         </item>
+
+
+
+ </group>
+
+ </menu>

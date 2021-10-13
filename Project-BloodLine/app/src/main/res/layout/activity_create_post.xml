@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical"
+    tools:context=".CreatePost">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="#37383b"
+        android:gravity="start|center"
+        android:text="  Create Post"
+        android:textColor="#f4f2f2"
+        android:textSize="24dp">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/post">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="45dp"
+        android:text="Please provide necessary information to request for blood"
+        android:textColor="#C400FF"
+        android:textSize="16dp">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/createdPost"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:hint="Write something for donors"
+        android:textColor="#f4f2f2"
+        android:textColorHint="#837a7a"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="30dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="/200"
+            android:textColor="#f4f2f2"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bags of blood needed? "
+            android:textColor="#f4f2f2"
+            android:textSize="18sp"/>
+        <Spinner
+            android:id="@+id/spinnerBloodAmount"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="5dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Select hospital name at which you need blood "
+        android:textSize="18dp"
+        android:textColor="#f4f2f2"/>
+
+    <Spinner
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/spinnerHospitalName"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButtonCreatePost"
+            android:layout_width="110dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/button_bg"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/buttonSharePost"
+            android:layout_width="110dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/button_bg"
+            android:text="Share post" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backToMainFromCreatePost"
+        android:layout_width="280dp"
+        android:layout_height="29dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/create_account"
+        android:text="Back to main menu" />
+
+</LinearLayout>

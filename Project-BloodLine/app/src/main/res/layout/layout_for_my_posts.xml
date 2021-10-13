@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginLeft="10dp"
+    android:id= "@+id/cardViewForMyPost">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_200"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rcy_showUsernameMyPost"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:text="Username"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:text="BloodStatus"
+                android:textSize="16dp"
+                android:background="#50024c"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/rcy_bloodStatus"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/rcy_phnNumberMyPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="PhoneNumber"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Posting time :"
+                android:textColor="#311b92"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/rcy_postingTimeMyPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" time"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Amount of Blood :"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/rcy_amountBloodMyPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bloodAmount"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Hospital Name : "
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/rcy_hospitalMyPost"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="hospitalName"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rcy_sharedPostMyPost"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="start"
+            android:text="SharedPost"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

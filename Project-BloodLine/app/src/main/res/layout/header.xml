@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="#212121"
+    android:gravity="bottom"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/heart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dp"
+
+        android:text="BloodLine"
+        android:textColor="#ef9a9a"
+        android:textSize="24dp" />
+
+
+</LinearLayout>

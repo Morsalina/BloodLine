@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">BloodLine</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="bloodGroup">
+        <item> A +ve </item>
+        <item> A -ve </item>
+        <item> B +ve </item>
+        <item> B -ve </item>
+        <item> AB +ve </item>
+        <item> AB -ve </item>
+        <item> O +ve </item>
+        <item> O -ve </item>
+
+    </string-array>
+
+
+    <string-array name="locationName">
+        <item> Bandarban </item>
+        <item> Barguna </item>
+        <item> Barisal </item>
+        <item> Bhola </item>
+        <item> Bogra </item>
+        <item> Chandpur </item>
+        <item> Chittagong </item>
+        <item> Comilla </item>
+        <item> Dhaka </item>
+        <item> Dinajpur </item>
+        <item> Faridpur </item>
+        <item> Gazipur </item>
+        <item> Habiganj </item>
+        <item> Jessore </item>
+        <item> Jhalokati </item>
+        <item> Jhenaidah </item>
+        <item> Khulna </item>
+        <item> Kushtia </item>
+        <item> Lakshmipur </item>
+        <item> Lalmonirhat </item>
+        <item> Madaripur </item>
+        <item> Magura </item>
+        <item> Mymensingh </item>
+        <item> Naogaon </item>
+        <item> Narail </item>
+        <item> Narayanganj </item>
+        <item> Noakhali </item>
+        <item> Pabna </item>
+        <item> Panchagarh </item>
+        <item> Patuakhali </item>
+        <item> Pirojpur </item>
+        <item> Rajbari </item>
+        <item> Rajshahi </item>
+        <item> Rangamati </item>
+        <item> Rangpur </item>
+        <item> Shariatpur </item>
+        <item> Sirajganj </item>
+        <item> Sylhet </item>
+        <item> Tangail </item>
+
+    </string-array>
+
+    <string-array name="bloodAmount">
+        <item> 1 Bag </item>
+        <item> 2 Bag </item>
+        <item> 3 Bag </item>
+        <item> 4 Bag </item>
+        <item> 5 Bag </item>
+
+    </string-array>
+
+    <string-array name="HospitalName">
+        <item> Dhaka Community Hospital </item>
+        <item> Japan East West Medical College Hospital,Dhaka </item>
+        <item> Aysha Memorial Specialised Hospital, Dhaka </item>
+        <item> Bangabandhu Sheikh Mujib Medical University </item>
+        <item> Bangladesh Medical College Hospital, Dhaka </item>
+        <item> Basundhura Hospital (Pvt.) Ltd. </item>
+        <item> Catharsis Medical Centre Limited, Gazipur </item>
+        <item> Chander Hasi Hospital Limited, Habigonj, Sylhet </item>
+        <item> Chittagong Maa-O-Shishu Hospital, Chittagong </item>
+        <item> Dhaka Central International Medical College Hospital, Adabor, Dhaka </item>
+        <item> Dr. Alauddin Ahmed Clinic, Jhalakati </item>
+        <item> Greenland Hospital Limited, Sector - 10, Uttara, Dhaka. </item>
+        <item> Holy Family Red Crescent Medical College Hospital, Dhaka </item>
+        <item> Maa Nursing Home and Diagnostic Centre, Tangail </item>
+        <item> Naogaon Sadar Hospital </item>
+        <item> Square Hospital Ltd., Dhaka </item>
+        <item> Siddiqia Eye Foundation, Mymensingh </item>
+
+    </string-array>
+
+    <string-array name="helpLine">
+        <item> National Emergency Helpline  </item>
+        <item> Emergency Hotline-1 </item>
+        <item> IEDCR </item>
+        <item> Ambulance Service </item>
+        <item> Expert Health Line</item>
+
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

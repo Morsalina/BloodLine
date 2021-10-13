@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical"
+    tools:context=".SeeMyPosts">
+
+    <TextView
+        android:id="@+id/textPost1"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_gravity="start"
+        android:background="#37383b"
+        android:gravity="center|start"
+        android:text="  Shared Posts"
+        android:textColor="#f4f2f2"
+        android:textSize="22sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMyPost"
+        android:layout_width="match_parent"
+        android:layout_height="543dp"
+        android:background="#212121"
+        app:layoutManager="LinearLayoutManager" />
+
+    <TextView
+        android:id="@+id/errorMsgMyPost"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#E60909"
+        android:textSize="24dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/backToMainFromMyPost"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="back to main menu" />
+
+</LinearLayout>
